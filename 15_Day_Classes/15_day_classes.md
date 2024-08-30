@@ -173,13 +173,13 @@ class Person {
   }
 }
 
-const person1 = new Person('Asabeneh', 'Yetayeh', 250, 'Finland', 'Helsinki')
+const person1 = new Person('Asabeneh', 'Yetayeh', 25, 'Finland', 'Helsinki')
 
 console.log(person1)
 ```
 
 ```sh
-Person {firstName: "Asabeneh", lastName: "Yetayeh", age: 250, country: "Finland", city: "Helsinki"}
+Person {firstName: "Asabeneh", lastName: "Yetayeh", age: 25, country: "Finland", city: "Helsinki"}
 ```
 
 ### Default values with constructor
@@ -191,7 +191,7 @@ class Person {
   constructor(
     firstName = 'Asabeneh',
     lastName = 'Yetayeh',
-    age = 250,
+    age = 25,
     country = 'Finland',
     city = 'Helsinki'
   ) {
@@ -211,7 +211,7 @@ console.log(person2)
 ```
 
 ```sh
-Person {firstName: "Asabeneh", lastName: "Yetayeh", age: 250, country: "Finland", city: "Helsinki"}
+Person {firstName: "Asabeneh", lastName: "Yetayeh", age: 25, country: "Finland", city: "Helsinki"}
 Person {firstName: "Lidiya", lastName: "Tekle", age: 28, country: "Finland", city: "Espoo"}
 ```
 
@@ -234,7 +234,7 @@ class Person {
   }
 }
 
-const person1 = new Person('Asabeneh', 'Yetayeh', 250, 'Finland', 'Helsinki')
+const person1 = new Person('Asabeneh', 'Yetayeh', 25, 'Finland', 'Helsinki')
 const person2 = new Person('Lidiya', 'Tekle', 28, 'Finland', 'Espoo')
 
 console.log(person1.getFullName())
@@ -267,7 +267,7 @@ class Person {
   }
 }
 
-const person1 = new Person('Asabeneh', 'Yetayeh', 250, 'Finland', 'Helsinki')
+const person1 = new Person('Asabeneh', 'Yetayeh', 25, 'Finland', 'Helsinki')
 const person2 = new Person('Lidiya', 'Tekle', 28, 'Finland', 'Espoo')
 
 console.log(person1.score)
@@ -305,7 +305,7 @@ class Person {
     const fullName = this.firstName + ' ' + this.lastName
     return fullName
   }
-  get getScore() {
+  get getScore() 
     return this.score
   }
   get getSkills() {
@@ -313,7 +313,7 @@ class Person {
   }
 }
 
-const person1 = new Person('Asabeneh', 'Yetayeh', 250, 'Finland', 'Helsinki')
+const person1 = new Person('Asabeneh', 'Yetayeh', 25, 'Finland', 'Helsinki')
 const person2 = new Person('Lidiya', 'Tekle', 28, 'Finland', 'Espoo')
 
 console.log(person1.getScore) // We do not need parenthesis to call a getter method
@@ -363,7 +363,7 @@ class Person {
   }
 }
 
-const person1 = new Person('Asabeneh', 'Yetayeh', 250, 'Finland', 'Helsinki')
+const person1 = new Person('Asabeneh', 'Yetayeh', 25, 'Finland', 'Helsinki')
 const person2 = new Person('Lidiya', 'Tekle', 28, 'Finland', 'Espoo')
 
 person1.setScore = 1
@@ -432,7 +432,7 @@ class Person {
   }
 }
 
-const person1 = new Person('Asabeneh', 'Yetayeh', 250, 'Finland', 'Helsinki')
+const person1 = new Person('Asabeneh', 'Yetayeh', 25, 'Finland', 'Helsinki')
 const person2 = new Person('Lidiya', 'Tekle', 28, 'Finland', 'Espoo')
 const person3 = new Person('John', 'Doe', 50, 'Mars', 'Mars city')
 
@@ -464,9 +464,9 @@ console.log(person3.getPersonInfo())
 ["HTML", "CSS", "JavaScript"]
 ["Planning", "Managing", "Organizing"]
 []
-Asabeneh Yetayeh is 250. He lives Helsinki, Finland. He knows HTML, CSS and JavaScript
-Lidiya Tekle is 28. He lives Espoo, Finland. He knows Planning, Managing and Organizing
-John Doe is 50. He lives Mars city, Mars.
+Asabeneh Yetayeh is 25. He lives in Helsinki, Finland. He knows HTML, CSS and JavaScript.
+Lidiya Tekle is 28. She lives in Espoo, Finland. She knows Planning, Managing and Organizing.
+John Doe is 50. He lives in Mars city, Mars.
 ```
 
 ### Static method
@@ -569,7 +569,7 @@ class Student extends Person {
   }
 }
 
-const s1 = new Student('Asabeneh', 'Yetayeh', 'Finland', 250, 'Helsinki')
+const s1 = new Student('Asabeneh', 'Yetayeh', 'Finland', 25, 'Helsinki')
 console.log(s1)
 console.log(s1.saySomething())
 console.log(s1.getFullName())
@@ -577,11 +577,11 @@ console.log(s1.getPersonInfo())
 ```
 
 ```sh
-Student {firstName: "Asabeneh", lastName: "Yetayeh", age: "Finland", country: 250, city: "Helsinki", …}
+Student {firstName: "Asabeneh", lastName: "Yetayeh", age:25, country:Finland, city: "Helsinki", …}
 I am a child of the person class
 Asabeneh Yetayeh
-Student {firstName: "Asabeneh", lastName: "Yetayeh", age: "Finland", country: 250, city: "Helsinki", …}
-Asabeneh Yetayeh is Finland. He lives Helsinki, 250.
+Student {firstName: "Asabeneh", lastName: "Yetayeh", age:25 , country:Finland:, city: "Helsinki", …}
+Asabeneh Yetayeh is 25. He lives in Helsinki,Finland.
 ```
 
 ### Overriding methods
@@ -616,7 +616,7 @@ class Student extends Person {
 const s1 = new Student(
   'Asabeneh',
   'Yetayeh',
-  250,
+  25,
   'Finland',
   'Helsinki',
   'Male'
@@ -693,7 +693,7 @@ console.log('Frequency Distribution: ',statistics.freqDist()) // [(20.0, 26), (1
 ```
 
 ```sh
-// you output should look like this
+// your output should look like this
 console.log(statistics.describe())
 Count: 25
 Sum:  744
