@@ -153,25 +153,25 @@ const areaOfCircle = PI * radius * radius
 console.log(areaOfCircle)  //  314 m
 
 
-const gravity = 9.81      // in m/s2
+const gravity = 9.81      // in m/s^2
 let mass = 72             // in Kilogram
 
 // Let us calculate weight of an object
 const weight = mass * gravity
 console.log(weight)        // 706.32 N(Newton)
 
-const boilingPoint = 100  // temperature in oC, boiling point of water
-const bodyTemp = 37       // body temperature in oC
+const boilingPoint = 100  // temperature in degree celsius ( boiling point of water).
+const bodyTemp = 37       // body temperature in degree celsius.
 
 
 // Concatenating string with numbers using string interpolation
 /*
- The boiling point of water is 100 oC.
- Human body temperature is 37 oC.
- The gravity of earth is 9.81 m/s2.
+ The boiling point of water is 100 degree celsius.
+ Human body temperature is 37 degree celsius.
+ The gravity of earth is 9.81 m/s^2.
  */
 console.log(
-  `The boiling point of water is ${boilingPoint} oC.\nHuman body temperature is ${bodyTemp} oC.\nThe gravity of earth is ${gravity} m / s2.`
+  `The boiling point of water is ${boilingPoint} degree celsius.\nHuman body temperature is ${bodyTemp} degree celsius.\nThe gravity of earth is ${gravity} m / s^2.`
 )
 ```
 
