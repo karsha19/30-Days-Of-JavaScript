@@ -31,4 +31,4 @@ console.log(Math.log(10)) // 2.302585092994046
 console.log(Math.sin(0)) //0
 console.log(Math.sin(60)) //0.50
 console.log(Math.cos(0)) //1
-console.log(Math.cos(60)) //0.866
+console.log(Math.cos(60)) //0.5
