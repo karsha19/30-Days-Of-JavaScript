@@ -28,7 +28,7 @@ console.log(Math.log(2)) // 0.6931471805599453
 console.log(Math.log(10)) // 2.302585092994046
 
 // Trigonometry
-console.log(Math.sin(0))
-console.log(Math.sin(60))
-console.log(Math.cos(0))
-console.log(Math.cos(60))
+console.log(Math.sin(0)) //0
+console.log(Math.sin(60)) //0.86
+console.log(Math.cos(0)) //1
+console.log(Math.cos(60)) //0.5
